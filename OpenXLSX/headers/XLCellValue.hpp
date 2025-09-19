@@ -84,7 +84,7 @@ namespace OpenXLSX
     struct VisitXLCellValueTypeToDouble
     {
         std::string packageName = "VisitXLCellValueTypeToDouble";
-        double operator()(int64_t v) const { return v; }
+        double operator()(int64_t v) const {return (double)v; }
         double operator()(double v) const { return v; }
         double operator()(bool v) const { return v; }
         // double operator()( struct timestamp v ) { /* to be implemented if this type ever gets supported */ }
