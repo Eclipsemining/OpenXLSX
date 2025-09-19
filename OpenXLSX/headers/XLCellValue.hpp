@@ -600,6 +600,12 @@ namespace OpenXLSX
             }
         }
 
+        /**
+         * @brief Get a copy of the XLCellValue object for the cell.
+         * @return An XLCellValue object.
+         */
+        XLCellValue getValue() const;
+
     private:
         //---------- Private Member Functions ---------- //
 
@@ -652,12 +658,6 @@ namespace OpenXLSX
          * @param stringValue The value to be set.
          */
         void setString(const char* stringValue);
-
-        /**
-         * @brief Get a copy of the XLCellValue object for the cell.
-         * @return An XLCellValue object.
-         */
-        XLCellValue getValue() const;
 
         /**
          * @brief get the shared string index of value
